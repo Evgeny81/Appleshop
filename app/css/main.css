@@ -1,0 +1,565 @@
+/*Общие данные*/
+
+* {
+  font-family: 'elektra_light_proregular';
+}
+
+.order__header-content,
+.common__button,
+.slider__controls-button,
+.page-title__text,
+.footer__options-title {
+  font-family: 'elektra_light_probold';
+}
+
+html, body{
+	height: 100%;
+}
+
+body {
+
+    min-width: 1070px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+body>.wrapper {
+	position: relative;
+    height: auto;
+    min-height: 100%;
+    min-width: 1060px;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*Основная часть*/
+.main {
+	max-width: 1070px;
+	margin: 0 auto;
+}
+
+/*Логотип в левой части сайта*/
+
+.logo__text {
+  display: none;
+}
+
+/*Левое меню*/
+
+.main__sidebar {
+    float: left;
+    width: 230px;
+
+}
+
+.order, .sidebar__contacts {
+  background: #F4F6F9;
+
+}
+
+/*Меню заказать звонок*/
+
+.order__form--wrap {
+  margin: 0 auto;
+  width: 210px;
+  min-height: 270px;
+}
+
+.order__header-content {
+  font-size: 26px;
+  color: #829AB1;
+}
+
+.common--label:before,
+.common--label:after {
+  content: "";
+  display: table;
+}
+
+.common--label:after {
+  clear: both;
+}
+
+.form__common {
+  margin-bottom: 15px;
+}
+
+.common__name-title {
+  display: inline;
+  float: left;
+  font-size: 16px;
+  padding-top: 4px;
+  color: #5C7B98;
+}
+
+.common__row-select--wrap {
+  display: inline;
+  float: right;
+}
+
+.common__row-select{
+  background: #00B9FE;
+}
+
+.common__name--field,
+.common__telephone--field {
+  width: 130px;
+  height: 25px;
+  float: right;
+}
+
+.common__textarea {
+  resize: vertical;
+  width: 204px;
+  height: 67px;
+}
+
+.common__button {
+  color: #FFF;
+  width: 90px;
+  height: 35px;
+  border: none;
+  outline: none;
+}
+
+.common__button-enter {
+  background: #00B9FE;
+}
+
+.common__button-clear {
+  background: #DAE1EB;
+  margin-left: 25px;
+}
+
+/*Галерея в левой части меню*/
+
+.picture {
+    margin-left: -8px;
+}
+
+.pictures__list {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -4.0px;
+}
+
+.pictures__item {
+  display: inline-block;
+  margin: 0 0 10px 8px;
+  width: 70px;
+  height: 70px;
+  letter-spacing: normal;
+}
+
+/*Контакты в левой части сайта*/
+
+.contacts__address {
+  background: url(../images/location.png) 0 0 no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 22px;
+  margin-bottom: 28px;
+}
+
+.sidebar__contacts--list {
+  padding: 0;
+  color: #5C7B98;
+}
+
+.contacts__address--pos {
+  padding-left: 25px;
+  width: 200px;
+  font-size: 16px;
+  color: #5C7B98;
+  text-decoration: none;
+}
+
+.contacts__phone {
+  background: url(../images/phone.png) 0 0 no-repeat;
+  width: 16px;
+  height: 22px;
+  margin-left: 20px;
+}
+
+.contacts__phone--pos {
+  padding-left: 27px;
+  display: block;
+  width: 170px;
+  font-size: 16px;
+  color: #5C7B98;
+  text-decoration: none;
+}
+
+.common__name--field::-webkit-input-placeholder,
+.common__telephone--field::-webkit-input-placeholder,
+.common__textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  padding-left: 2px;
+}
+/*Основная часть*/
+
+.container {
+    min-width: 740px;
+    float: right;
+    margin-left: 30px;
+}
+
+/*Слайдер*/
+.slider {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+
+}
+
+.slider__list--wrap {
+  width: 740px;
+  overflow: hidden;
+}
+
+.slider__list {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+  width: 4000px;
+  max-height: 300px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  left: 0;
+  padding: 0;
+}
+
+.slider__list:before,
+.slider__list:after {
+  content: "";
+  display: table;
+}
+
+.slider__list:after {
+  clear: both;
+}
+
+.slider__item {
+  float: left;
+}
+.slider__controls-button {
+  position: absolute;
+  top: 150px;
+  width: 70px;
+  height: 34px;
+  color: grey;
+  text-decoration: none;
+  text-align: center;
+}
+
+.slider__controls-button_next {
+    background-image: url(../images/slider_controls.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    left: 7px;
+}
+
+.slider__controls-button_prev {
+    left: 662px;
+    background-image: url(../images/slider_controls.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+
+
+.slider__controls-button_next:hover {
+    background-position: bottom left;
+}
+
+.slider__controls-button_prev:hover {
+    background-position: bottom right;
+}
+
+.slider__description {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);;
+  color: white;
+  width: 100%;
+  height: 76px;
+}
+
+.slider__description-inner {
+  margin: 14px 0 0 42px;
+}
+
+.slider__description-title {
+  font-size: 18px;
+
+}
+
+.slider__description-title-link {
+  color: #00B9FE;
+}
+
+.slider__description-text {
+  font-size: 14px;
+}
+
+/*Товары*/
+/*Стили заголовка*/
+.page-title {
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-title__text {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  font-size: 24px;
+  color: #5C7B98;
+}
+
+.page-title__text:after,
+.page-title__text:before {
+  content:"";
+  height: 1px;
+  width: 2000px;
+  display: block;
+  background: #5c7b98;
+  top:50%;
+  position: absolute;
+  margin-top: -1px;
+}
+
+.page-title__text:after {
+  left: 100%;
+}
+
+.page-title__text:before {
+  right: 100%;
+}
+
+/*Стили списка продукции*/
+.products {
+
+}
+
+.products__list {
+  overflow: hidden;
+  padding: 0;
+}
+
+.products__options-list {
+  padding: 10px;
+}
+
+.products__item {
+  float: left;
+  margin: 0 0 25px 25px;
+  width: 228px;
+  height: 235px;
+  border: 1px solid #DAE1EB;
+}
+
+.products__item:first-child {
+  margin-left: 0;
+}
+
+.products__item:hover {
+  box-shadow: 0 0  10px #DAE1EB;
+  overflow: hidden;
+}
+
+/*Стили описания продуктов*/
+
+.products__title {
+  overflow: hidden;
+}
+
+.products__title-pic {
+  float: left;
+  position: relative;
+  width: 82px;
+  height: 90px;
+}
+
+.products__title-pic img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.product__title-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 115px;
+  height: 90px;
+  color: #00B9FE;
+  text-decoration: underline;
+}
+
+.product__title-text:hover {
+  color: #613993;
+}
+
+.products__title-text--wrap {
+  float: right;
+  width: 115px;
+}
+
+.products__options-item {
+  overflow: hidden;
+  color: #5C7B98;
+}
+
+.products__options-key {
+  float: left;
+}
+
+.products__option-value {
+  float: right;
+}
+
+/*Популярные товары*/
+
+
+
+
+
+/*Футер*/
+
+
+.site_footer {
+    background: #623B94;
+    position: relative;
+    margin-top: -240px;
+    height: 240px;
+    clear: both;
+    background-image: url(../images/footer-bg.png);
+    background-repeat: repeat;
+    background-position: 0px 0px;
+    width: 100%;
+}
+
+.footer__logo {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.footer__logo-text {
+  text-indent: -9999px;
+}
+
+.footer__options-list {
+  position: absolute;
+  left: 320px;
+  top: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu {
+  padding: 0;
+}
+
+.footer__menu-item {
+  padding-top: 10px;
+}
+
+.footer__options-item {
+  float: left;
+  margin-left: 70px;
+}
+
+.footer__options-item:first-child {
+  margin-left: 0;
+}
+
+.footer__options-title,
+.footer__menu-link {
+  color: #fff;
+}
+
+.footer__socials {
+  position: absolute;
+  right: 42px;
+  top: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__socials-list {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.footer__socials-item {
+  display: inline-block;
+}
+
+.footer__socials-icon {
+  display: inline-block;
+
+}
+
+.footer__socials-icons {
+  padding: 0;
+  margin: 0;
+}
+
+.footer__socials-network {
+  background-image: url(../images/socials.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 41px;
+  height: 41px;
+}
+
+.footer__socials-icon_vk {
+    background-position: 0 0;
+}
+
+.footer__socials-icon_fb {
+  background-position: -53px 0;
+}
+
+.footer__socials-icon_tw {
+  background-position: -103px 0;
+}
+
+/*Sticky footer*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+.main {padding-bottom: 240px;}
+
+
+
